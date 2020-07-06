@@ -83,16 +83,35 @@
                                                                 </center></p>-->
 
 								<h2>Weatherstation Dashboard</h2>
-								<p><i></i>Talk about project goal. Technologies used. Include pictures. Current status </p>
+								<p>The versatility of the raspberry pi allows it to be used in a multitude of ways, specifically Raspberry Pi’s can be used to build modular weather stations to monitor the environment conditions in multiple areas. This project is the creation of a network of raspberry pi’s taking temperature, pressure, and humidity data in the Advanced Particle Detection Lab (APDL) run by the physics department at Texas Tech. An undetermined amount of sensors, each consisting of a raspberry pi and BME280 sensor, make up the data collection end of our system each sensor sends their data back to a hub server which then aggregates the data and allows it to be analyzed at a centrally located terminal. The climate control of the APDL is important because the lab is manufacturing environmentally sensitive radiation sensors, and such the HVAC systems must be monitored closely. In addition to the rooms, there are sensors placed in two dry cabinets that must be kept below a certain humidity level. Due to extenuating circumstances involving the Covid-19 the project is currently left unscaled up and only consists of a pair of sensors, however it does function and was being used to monitor one of the aforementioned cabinets for Moisture purging efficiency. The goal is for this project to complete the network created such that this technology could be duplicated and used by other research labs looking for environmental monitoring.</p>
+                                                                <p>My involvement in this project currently is to create a secure network of all the sensors and raspberry pi's that allow for the transfer of data in the correct pipeline using the MQTT framework. I have set up the MQTT server with broker enabled publish-subscribe system to direct the data stream to central hub Pi. I am also creating a dashboard for our lab website for real time monitoring of the "weather" conditions. I have used apache as the web server and MySql as the backend of the website to serve as a database for the sensor data and phpmyadmin to facilitate management of the database. Once, this pandemic policies are uplifted I will be working on installing more sensors in the lab and incorporating these sensors in the data-dashboard system. </p>
+                                                         
+<img src="images/sensors.png" width="1000" height="800" alt="Sensor outputs">
+<table>
+  <tr>
+    <td><img src="images/worker.jpeg" width=300 height=300></td>
+    <td><img src="images/set_up.jpeg" width=300 height=300></td>
+    <td><img src="images/modular.jpeg" width=300 height=300></td>
+  </tr>
+  <tr>
+    <td> A worker Pi</td>
+    <td> My pandemic work station</td>
+    <td> A worker Pi with a 3D printed modular skin</td>
+  </tr>
+</table>
 								<hr />
+
                                                         <h3>Tools</h3>
                                                                 In order to achieve this goal, I used the following tools:
                                                                 <div class="partners white-bg" id="partners" role="region" aria-label="Affiliates Logos"><div class="container">
                                                                         <ul class="client-logos">
-                                                                        <li><a href="https://pytorch.org/" title=""><img src="images/pytorch.png" alt="pytorch"></a></li>
-                                                                        <li><a href="http://scikit-learn.org/stable/" title=""><img src="images/sklearn.png" alt="scikit-learn"></a></li>
+                                                                        <li><a href="https://www.raspberrypi.org" title=""><img src="images/rasp.png" alt="pytorch"></a></li>
+                                                                        <li><a href="https://www.arduino.cc" title=""><img src="images/arduino.png" alt="pytorch"></a></li>
+                                                                        <li><a href="https://www.mysql.com" title=""><img src="images/mysql.png" alt="pytorch"></a></li>
+                                                                        <li><a href="https://www.apache.org title"><img src="images/apache.png" alt="pytorch"></a></li>
+                                                                        <li><a href="https://www.linux.com" title=""><img src="images/linux.png" alt="scikit-learn"></a></li>
                                                                         <li><a href="http://pandas.pydata.org/index.html" title=""><img src="images/pandas.jpeg" alt="Logo"></a></li>
-                                                                        <li><a href="http://scipy.org/" title=""><img src="images/scipy.png" alt="SciPy"></a></li>
+                                                                        <li><a href="https://matplotlib.org" title=""><img src="images/matplot.png" alt="SciPy"></a></li>
                                                                         <!-- <li><a href="https://root.cern.ch/" title=""><img src="images/root.png" alt="ROOT"></a></li> -->
                                                                         <!-- <li><a href="https://root.cern.ch/tmva" title=""><img src="images/tmva.gif" alt="Logo"></a></li> -->
 
