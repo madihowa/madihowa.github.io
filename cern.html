@@ -51,6 +51,7 @@
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="index.html#whoami">About Me</a></li>
                                     <li><a href="index.html#skills">My Skills</a></li>
+											<li><a href="./apdl.html">APD Lab</a></li>
                                     <li><a href="gbo.html">Green Bank Observatory</a></li>
                                     <li><a href="index.html#interests">Interests</a></li>
                                     <li><a href="index.html#cta">Contact</a></li>
@@ -64,8 +65,8 @@
             <!-- Main -->
             <article id="main">
                 <header>
-                    <h2><a href="https://cps-vo.org/group/isis/internships/2020-interns/sadman-shanto">Institute for Software Integrated Systems (ISUS) @ Vanderbilt University (VU)</a></h2>
-                    <p><p>A quick look into my summer internship at the Work-Lab at ISIS, VU</p> </p>
+                    <h2><a href="https://sites.google.com/a/umich.edu/um-cern-reu/">University of Michigan - CERN Summer Research Experience for Undergraduates Program (UM-CERN REU)</a></h2>
+                    <p><p>A quick look into my summer internship with the ATLAS collaboration @ CERN</p> </p>
                 </header>
                 <section class="wrapper style5">
 
@@ -78,27 +79,36 @@
                             </a>
                             </center></p>-->
 
-                            <h2>Traffic Control with Connected and Autonomous Vehicles
+                            <h2>A Machine Learning Approach to Local Energy Calibration in the ATLAS Calorimeters
                             </h2>
-                            <h1>Advisors: <a href="https://engineering.vanderbilt.edu/bio/daniel-work">Daniel Work, PhD</a> and <a href="https://scholar.google.com/citations?user=DZ6_UdUAAAAJ&hl=en">George Gunter</a></h1>
-                            <p> This project will look at using Connected and Autonomous Vehicles (CAVS) to beneficially control the flow of traffic. Traffic is known to exhibit complicated, nonlinear behavior that often results in so-called phantom traffic jams in which traffic jams can appear seemingly from thin air. These jams are known to cause decreases in fuel efficiency, increases in commute time, and decreases in driver safety. An emerging technology for attempting to mitigate this phenomenon is the use of CAVs, which employ novel control methods specifically designed for stopping phantom jams.
+                            <h1>Advisor: <a href="http://atlas.physics.arizona.edu/~loch/">Peter Loch, PhD</a> </h1>
+                            <p> 
+                                The intention of an energy calibration scheme is to provide a calorimeter signal for physics object reconstruction in ATLAS which is calibrated outside an assumption about the type of object. This is of particular importance for final-state objects with a significant hadronic signal content, such as jets.
                             </p>
 
+                            <p> 
+                                The energy calibration method used in run 1 of The ATLAS detector was called Local Hadronic Cell Weighting (LCW) Calibration . The LCW calibration aims at the cluster-by-cluster reconstruction of the calorimeter signal on the appropriate (electromagnetic or hadronic) energy scale. This method used bins and a lookup table to calibrate the energy. In this, the cluster energy resolution is expected to improve by using other information in addition to the cluster signal in the calibration. The calorimeter signal inefficiencies that calibration includes non-compensating calorimeter response, signal losses due to clustering, and signal losses due to energy lost in inactive material.
+                            </p>
+                            <p> 
+                                The LCW method worked well for  high  energy  and  is  the  current  standard.   However, LCW calibration had poor response for energies less than 100 GeV. A Machine Learning (ML) approach to energy calibration could help to alleviate the issues that arise with LCW calibration. The hope of this approach is that it will be better at calibrating the energy for all energies. Also, due to the amount of data that ATLAS has, LCW calibration is computationally more expensive than a ML based model.  
+                            </p>
+                            <p> 
+                                In tandem with such a scheme, in this project we calibrate energy based on Geant4 simulation data. The data from the full simulations are stored in ROOT tuples, in a tree format. Each row vector in the dataset contains the signal, moments and information related to the composition for one topo-cluster. Since this data is produced through simulation, we have access to information, such as the topo-cluster true energy, which is not available in an experimental situation. This makes such a simulated format valuable for developing robust ML enabled energy calibration schemes.
+                            </p>
 
-                            <h3>Research Related Awards and Achievements</h3>
                             <h1>Publications:</h1>
                             <ul>
-                                <li style="list-style-type:square"><b><u>Shanto</u></b>, Gunter, Ramadan, Seibold, Work, <b>Challenges of Microsimulation Calibration with Traffic Waves using Aggregate Measurements</b>, <i>Transportation Research Board Annual Meeting 2021, accepted</i> </li>
+                                <li style="list-style-type:square"><b><u>Howard</u></b>, Loch, Pat, Young, <b>The Application of Machine Learning Techniques for Local Hadronic CalIbration of Topological Cell Clusters In the Atlas Calorimeters</b>, <i>ATLAS Internal Publication 2021, accepted</i> </li>
                             </ul>
 
                             <h1>Poster and Oral Presentations:</h1>
                             <ul>
-                                <li style="list-style-type:square">Poster Presentation at the <a href="https://indico.ads.ttu.edu/conferenceDisplay.py/abstractBook?confId=1536">Texas Tech University Department of Physics Research Competition 2021</a></li></br>
+                                <li style="list-style-type:square">End of Summer Presentation at the <a href="https://sites.google.com/a/umich.edu/um-cern-reu/previous-programs?authuser=0">UM‐CERN‐REU Summer Research Presentation</a></li></br>
                             </ul>
 
                             <center>
                                 <div class="resp-container">
-                                    <iframe class="resp-iframe" frameborder="0" src="./vu/vu_calibration.pdf" allowfullscreen></iframe>
+                                    <iframe class="resp-iframe" frameborder="0" src="./materials/MIH_UMICH_CERN_REU.pdf" allowfullscreen></iframe>
                                 </div>
                             </center>
 
@@ -109,14 +119,15 @@
             <!-- Footer -->
             <footer id="footer">
                 <ul class="icons">
-                    <li><a href="https://www.linkedin.com/in/sshanto" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                    <li><a href="https://github.com/shanto268" class="icon fa-github"><span class="label">Github></span></a></li>
-                    <li><a href="mailto:sadman-ahmed.shanto@ttu.edu" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/madihowa" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="https://github.com/madihowa" class="icon fa-github"><span class="label">Github></span></a></li>
+                    <li><a href="mailto:madison.howard@ttu.edu" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
                 </ul>
                 <ul class="copyright">
-                    <li>&copy; Sadman Ahmed Shanto</li>
+                    <li>&copy; Madison Howard</li>
                 </ul>
             </footer>
+
 
         </div>
 
